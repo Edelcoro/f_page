@@ -37,38 +37,37 @@
 
 <body>
 <div id="page">
-<h1>Contact Us</h1>
-<h2>Created with <a href="https://chatai.com">ChatAI</a> and Canva</h2>
+<h1>Contact Form</h1>
 
-<form>
-    <fieldset>
-        <legend>Contact Information</legend>
-        <label for="name">Name</label>
-        <input type="text" id="name">
-        
-        <label for="email">Email</label>
-        <input type="text" id="email">
-        
-        <label for="subject">Subject</label>
-        <input type="text" id="subject">
-        
-        <label for="comments">Comments</label>
-        <textarea id="comments"></textarea>
-    </fieldset>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value="John"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value="Doe"><br>
+    
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject"><br>
+    
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments"></textarea><br><br>
+  </fieldset>
 
-    <fieldset>
-        <legend>Select Option</legend>
-        <input type="radio" id="radio1" name="radio">
-        <label for="radio1">Option 1</label>
-        
-        <input type="radio" id="radio2" name="radio">
-        <label for="radio2">Option 2</label>
-        
-        <input type="radio" id="radio3" name="radio">
-        <label for="radio3">Option 3</label>
-    </fieldset>
+  <fieldset>
+    <legend>Select Option</legend>
+    <input type="radio" id="radio1" name="radio">
+    <label for="radio1">Option 1</label><br>
+    
+    <input type="radio" id="radio2" name="radio">
+    <label for="radio2">Option 2</label><br>
+    
+    <input type="radio" id="radio3" name="radio">
+    <label for="radio3">Option 3</label><br><br>
+  </fieldset>
 
-    <input type="submit" value="Send Message">
+  <input type="submit" value="Submit">
 </form>
 </div>
 </body>
